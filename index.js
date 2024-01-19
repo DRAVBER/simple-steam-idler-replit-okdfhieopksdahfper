@@ -11,7 +11,7 @@ var status = 1;  // 1 - online, 7 - invisible
 
 
 user = new steamUser();
-user.logOn({"accountName": username, "password": password, "twoFactorCode": steamTotp.generateAuthCode(shared_secret)});
+user.logOn({"overlord_youtube": username, "Alex200727": password, "guhnI1dwqc35Tmyqkhb/wB3zkfU=": steamTotp.generateAuthCode(shared_secret)});
 user.on('loggedOn', () => {
 	if (user.steamID != null) console.log(user.steamID + ' - Successfully logged on');
 	user.setPersona(status);               
